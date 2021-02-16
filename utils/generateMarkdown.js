@@ -14,7 +14,7 @@ function generateMarkdown(userResponses, userInfo) {
   * [Usage](#usage)` };
 
   if (userResponses.contributing !== '') { draftTable += `
-  * [Contributing](#contributing)` };
+  * [Contribution](#contribution)` };
 
   if (userResponses.tests !== '') { draftTable += `
   * [Tests](#tests)` };
@@ -67,7 +67,7 @@ function generateMarkdown(userResponses, userInfo) {
   if (userResponses.contributing !== '') {
   `
   
-  ## Contributing
+  ## Contribution
   
   
   ${userResponses.contributing}`

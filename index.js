@@ -4,8 +4,8 @@ const fs = require('fs');
 const util = require('util');
 
 // Internal NPMs
-const api = require('./utils/api.js');
-const generateMarkdown = require('./utils/generateMarkdown.js');
+const api = require('api.js');
+const generateMarkdown = require('generateMarkdown.js');
 
 // Inquirer to generate questions
 const questions = 
@@ -160,7 +160,7 @@ const questions =
             type: 'input',
             message: 'Select a license:',
             name: 'license',
-            choices: ["Apache License 2.0", "GNU General Public License v3.0", "MIT License", "BSD License", "N/A"],
+            choices: ['Apache License 2.0', 'GNU General Public License v3.0', 'MIT License', 'BSD License', 'N/A'],
             // Validate property to check that the user provided a value
             validate: (value) => {
                 if (value) {

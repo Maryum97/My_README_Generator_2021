@@ -8,7 +8,7 @@ const api = require('./utils/api.js');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
 // Inquirer to generate questions
-inquirer.prompt(
+const questions = 
     [
 
         // Github Username
@@ -158,7 +158,7 @@ inquirer.prompt(
         // List of Licenses
         {
             type: 'input',
-            message: 'What instructions must the user follow?',
+            message: 'Select a license:',
             name: 'license',
             choices: ["Apache License 2.0", "GNU General Public License v3.0", "MIT License", "BSD License", "N/A"],
             // Validate property to check that the user provided a value
@@ -191,8 +191,6 @@ inquirer.prompt(
             // Validation not required if question is optional
         }
     ]
-
-)
 
 // Declare function to write content to README file
 

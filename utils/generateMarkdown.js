@@ -2,126 +2,51 @@
 // https://docs.github.com/en/free-pro-team@latest/github/writing-on-github/basic-writing-and-formatting-syntax
 
 // function to generate markdown for README
-function generateMarkdown(userResponses, userInfo) {
+function generateMarkdown(answers) {
+  return `
+<h1 style="align: center;">${answers.title} 👋</h1>
 
-  // Plug userReponses into table of contents
-  let draftTable = `## Table of Contents`;
+![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)<br />
 
-  if (userResponses.installation !== '') { draftTable += `
-  * [Installation](#installation)` };
+## Description
+🔍 ${answers.description}
 
-  if (userResponses.usage !== '') { draftTable += `
-  * [Usage](#usage)` };
+## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
-  if (userResponses.contributing !== '') { draftTable += `
-  * [Contribution](#contribution)` };
+## Installation
+💾 ${answers.installation}
 
-  if (userResponses.tests !== '') { draftTable += `
-  * [Tests](#tests)` };
-  
-  // Create title and description
-  // Generate badges
-  let draftMarkdown = 
-  `# ${userResponses.title}
-  ![Badge for GitHub](https://img.shields.io/github/languages/top/${userResponses.username}/${userResponses.repository}?style=flat&logo=appveyor) 
-  
-  
-  ## Description 
-  
-  
-  ${userResponses.description}
-  `
-  // Add table of contents data to markdown
-  draftMarkdown += draftTable;
-  
-  // Add license section to markdown
-  draftMarkdown += `
-  * [License](#license)`;
+## Usage
+💻 ${answers.usage}
 
-  // Create installation section
-  if (userResponses.installation !== '') {
-  
-  draftMarkdown +=
-  `
-  
-  ## Installation
-  
-  
-  ${userResponses.installation}`
-  };
+## License
+![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)
+<br />
+This application is covered by the ${answers.license} license. 
 
-  // Create usage section
-  if (userResponses.usage !== '') {
-  
-  draftMarkdown +=
-  
-  `
-  
-  ## Usage 
-  
-   
-  ${userResponses.usage}`
-  };
-  
-  // Create contribution section
-  if (userResponses.contributing !== '') {
-  `
-  
-  ## Contribution
-  
-  
-  ${userResponses.contributing}`
-  };
+## Contributing
+👪 ${answers.contributing}
 
-  // Create tests section
-  if (userResponses.tests !== '') {
-  
-  draftMarkdown +=
-  `
-  
-  ## Tests
-  
-  
-  ${userResponses.tests}`
-  };
+## Tests
+✏️ ${answers.tests}
 
-  // Connect userResponses to license section
-  draftMarkdown +=
-  `
-  
-  ## License
-  
-  ${userResponses.license}
+## Questions
+✋ ${answers.questions}<br />
+<br />
+:octocat: Find me on GitHub: [${answers.username}](https://github.com/${answers.username})<br />
+<br />
+✉️ Email me with any questions: ${answers.email}<br /><br />
+
+_This README was generated with ❤️ by [README-generator](https://github.com/jpd61/README-generator) 🔥🔥🔥_
   `;
-
-  // Questions section
-  let draftDeveloper = 
-  `
-  ---
-  
-  ## Questions?
-  
-  ![Developer Profile Picture](${userInfo.avatar_url}) 
-  
-  For any questions, please contact me with the information below:
- 
-  GitHub: [@${userInfo.login}](${userInfo.url})
-  `;
-
-  // If GitHub email is not null, add to Developer section
-  if (userInfo.email !== null) {
-  
-  draftDeveloper +=
-  `
-  Email: ${userInfo.email}
-  `};
-
- // Add developer section to markdown
-  draftMarkdown += draftDeveloper;
-
-  // Return markdown
-  return draftMarkdown;
-};
+}
 
 // Export markdown module
 module.exports = generateMarkdown;

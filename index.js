@@ -8,14 +8,14 @@ const api = require('./utils/api.js');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
 // Inquirer to generate questions
-const questions = 
+const questions =
     [
 
         // Github Username
         {
             type: 'input',
             message: 'Enter your Github username:',
-            name: 'git',
+            name: 'username',
             // Validate property to check that the user provided a value
             validate: (value) => {
                 if (value) {
@@ -31,7 +31,7 @@ const questions =
         {
             type: 'input',
             message: 'Enter your E-mail address:',
-            name: 'git',
+            name: 'email',
             // Validate property to check that the user provided a value
             validate: (value) => {
                 if (value) {
@@ -47,7 +47,7 @@ const questions =
         {
             type: 'input',
             message: 'Enter the name of your Github repository:',
-            name: 'git',
+            name: 'repository',
             // Validate property to check that the user provided a value
             validate: (value) => {
                 if (value) {
@@ -79,7 +79,7 @@ const questions =
         {
             type: 'input',
             message: 'Enter the description of your Github project:',
-            name: 'git',
+            name: 'description',
             // Validate property to check that the user provided a value
             validate: (value) => {
                 if (value) {
@@ -179,7 +179,7 @@ const questions =
         {
             type: 'input',
             message: 'Explain how users can contribute to your project (if necessary).',
-            name: 'contribution',
+            name: 'contributing',
             // Validation not required if question is optional
         },
 
@@ -210,22 +210,20 @@ const writeFileAsync = util.promisify(writeToFile);
 async function init() {
     try {
         const userResponses = await inquirer.prompt(questions);
-        console.log("Your responses: ", userResponses);
-        console.log("Your responses have been logged. Calling to GitHub...");
 
         // Referencing API.js
         const userInfo = await api.getUser(userResponses);
-        console.log("Your GitHub user info: ", userInfo);
 
         // Pass inquirer data and api data to markdown
-        console.log("Generating your markdown")
         const markdown = generateMarkdown(userResponses, userInfo);
-        console.log(markdown);
 
         // Write markdown
         await writeFileAsync('ExampleREADME.md', markdown);
 
-    } catch (error) {
+        console.log('Successfully wrote to README.md');
+
+    }
+    catch (error) {
         console.log(error);
     }
 };

@@ -1,9 +1,7 @@
 # My_README_Generator_2021
 
 
-<h1 style="align: center;">Readme Generator 👋</h1>
-
-![badge](https://img.shields.io/badge/license-MIT License-brightgreen)<br />
+<h1 style="align: center;">Readme Generator 👋</h1><br />
 
 ## Description
 🔍 This project is based on the design and use of a software application that creates a markdown file based on the questions that are asked in the local terminal, with the use of Node.js. That markdown file is a README for the current project, however, this application may be used to create multiple README files for various different projects.

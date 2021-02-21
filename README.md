@@ -21,8 +21,9 @@
 💾 In order to install my app, the user must have access to Node.js, fs, package.json, util, and axios, on their machine, so that they are also able to generate a markdown file the way I have generated this current one.
 
 ## Instructions
-⚙️ In order to create a markdown file, the user must open "terminal", and then type "node index.js" to access the questions. Then, on pressing ENTER, the user will be asked a series of questions, which they must answer, or they will not be able to proceed. After answering all the questions, the functions in the index.js file and the generateMarkdown.js file are activated, and a markdown file is generated with all the headings covered with content that the user has provided as answers in 
-their terminal. Hence, a markdown file has been generated; the user may then right-click on the newly generated README file in the EXPLORER area of VS Code, and select "Open Preview". The user is now able to view the file as it would appear in the browser.
+⚙️ In order to create a markdown file, the user must open "terminal", and then type "node index.js" to access the questions. Then, on pressing ENTER, the user will be asked a series of questions, which they must answer, or they will not be able to proceed. After answering all the questions, the functions in the index.js file and the generateMarkdown.js file are activated, and a markdown file is generated with all the headings covered with content that the user has provided as answers in their terminal. Hence, a markdown file has been generated; the user may then right-click on the newly generated README file in the EXPLORER area of VS Code, and select "Open Preview". The user is now able to view the file as it would appear in the browser. For clearer instructions, watch the animation below:
+
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/73832871/108633583-f1fb4b80-746c-11eb-89e3-4c688eb7ae41.gif)
 
 ## Usage
 💻 I use my app using the same instructions that I have provided above and as shown in the video provided.

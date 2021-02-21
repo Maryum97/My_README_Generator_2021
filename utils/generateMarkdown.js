@@ -4,9 +4,7 @@
 // function to generate markdown for README
 function generateMarkdown(answers) {
   return `
-<h1 style="align: center;">${answers.title} 👋</h1>
-
-![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)<br />
+<h1 style="align: center;">${answers.title} 👋</h1><br />
 
 ## Description
 🔍 ${answers.description}

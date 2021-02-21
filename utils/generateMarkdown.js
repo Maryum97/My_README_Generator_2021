@@ -4,7 +4,7 @@
 // function to generate markdown for README
 function generateMarkdown(answers) {
   return `
-<h1 style="align: center;">${answers.title} 👋</h1><br />
+<h1 style="align: center;">${answers.title} 👋</h1>
 
 ## Description
 🔍 ${answers.description}

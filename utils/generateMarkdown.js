@@ -19,8 +19,8 @@ function generateMarkdown(answers) {
 - [License](#license)
 - [Contributing](#contributing)
 - [Tests](#tests)
-- [Questions](#questions)
 - [Credits](#credits)
+- [Questions](#questions)
 
 ## Installation
 💾 ${answers.installation}
@@ -42,6 +42,11 @@ This application is covered by the ${answers.license} license.
 ## Tests
 ✏️ ${answers.tests}
 
+
+## Credits
+💐 ${answers.credits}
+
+
 ## Questions
 ✋ ${answers.questions}<br />
 <br />
@@ -51,9 +56,6 @@ This application is covered by the ${answers.license} license.
 
 _This README was generated with ❤️ by [README-generator](https://github.com/jpd61/README-generator) 🔥🔥🔥_
   
-
-## Credits
-💐 ${answers.credits}
 
 `;
 }

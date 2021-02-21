@@ -41,13 +41,13 @@ This application is covered by the MIT License license.
 ✏️ NA
 
 ## Credits
-I would like to credit the following: 
+💐 I would like to credit the following: 
 1) W3Schools; 
 2) Stack-Overflow; 
 3) YouTube.com;
 
 ## Questions
-✋ undefined<br />
+✋ If you have any questions, contact me directly using the contact information I have provided below.<br />
 <br />
 :octocat: Find me on GitHub: [Maryum97](https://github.com/Maryum97)<br />
 <br />

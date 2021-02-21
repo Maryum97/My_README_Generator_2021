@@ -14,14 +14,19 @@ function generateMarkdown(answers) {
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
+- [Instructions](#instructions)
 - [Usage](#usage)
 - [License](#license)
 - [Contributing](#contributing)
 - [Tests](#tests)
 - [Questions](#questions)
+- [Credits](#credits)
 
 ## Installation
 💾 ${answers.installation}
+
+## Instructions
+⚙️ ${answers.instructions}
 
 ## Usage
 💻 ${answers.usage}
@@ -45,7 +50,12 @@ This application is covered by the ${answers.license} license.
 ✉️ Email me with any questions: ${answers.email}<br /><br />
 
 _This README was generated with ❤️ by [README-generator](https://github.com/jpd61/README-generator) 🔥🔥🔥_
-  `;
+  
+
+## Credits
+💐 ${answers.credits}
+
+`;
 }
 
 // Export markdown module

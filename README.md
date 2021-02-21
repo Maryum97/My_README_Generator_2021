@@ -25,6 +25,8 @@
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/73832871/108633583-f1fb4b80-746c-11eb-89e3-4c688eb7ae41.gif)
 
+(created using the link <a href="https://ezgif.com/video-to-gif/ezgif-2-b1b3242e871f.mp4" target="_blank">here</a>.)
+
 ## Usage
 💻 I use my app using the same instructions that I have provided above and as shown in the video provided.
 
@@ -34,7 +36,7 @@
 This application is covered by the MIT License license. 
 
 ## Contributing
-👪 The user may gain access to my repository by creating a branch, if they wish to amend my code.
+👪 The user may gain access to my repository by contacting me to create their own branch in my repository on Github, if they wish to amend my code.
 
 ## Tests
 ✏️ NA
